@@ -1,7 +1,7 @@
 import { redirectPage } from "../page_objects/redirect_page";
 import { statusCodesPage } from "../page_objects/status_codes_page";
 
-describe('the internet spec', () => {
+describe('the internet redirect', () => {
   it('redirects from the Redirection page', () => {
     cy.visit(redirectPage.pagePath);
     redirectPage.verifyHeaderText();
